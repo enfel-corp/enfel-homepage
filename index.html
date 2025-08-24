@@ -48,14 +48,12 @@
     <h2>お問い合わせ</h2>
     <p>以下のフォームよりお問い合わせください（※このフォームは送信されません）。</p>
 <form action="https://formsubmit.co/enfel134.goen@gmail.com" method="POST">
-  <!-- ▼ これが重要！送信後の遷移先を指定 -->
   <input type="hidden" name="_next" value="https://hogezokutyou.github.io/enfel-homepage/thankyou.html">
-
-  <!-- スパム防止（必須ではないけどおすすめ） -->
   <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="【株式会社Enfel】お問い合わせ">
+  <input type="hidden" name="_template" value="table">
   <input type="text" name="_honey" style="display:none">
 
-  <!-- 入力項目 -->
   <input type="text" name="お名前" placeholder="お名前" required>
   <input type="email" name="メール" placeholder="メールアドレス" required>
   <textarea name="内容" rows="5" placeholder="お問い合わせ内容" required></textarea>
