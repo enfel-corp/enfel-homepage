@@ -134,3 +134,13 @@ section .panel + .panel{ margin-top:16px }
 @media (max-width: 640px){
   .hero-inner{ padding:56px 16px 48px }
 }
+/* ---- Policy & Legal Section ---- */
+#policy, #legal {
+  font-size: 14px;          /* 全体を少し小さめに */
+  color: #555;              /* 落ち着いたグレー */
+}
+#policy h2, #legal h2 {
+  font-size: 16px;          /* 見出しも控えめに */
+  margin-bottom: 8px;
+  color: #777;
+}
