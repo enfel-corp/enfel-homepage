@@ -47,12 +47,17 @@
   <section id="contact">
     <h2>お問い合わせ</h2>
     <p>以下のフォームよりお問い合わせください（※このフォームは送信されません）。</p>
-    <form>
-      <input type="text" placeholder="お名前" required>
-      <input type="email" placeholder="メールアドレス" required>
-      <textarea rows="5" placeholder="お問い合わせ内容" required></textarea>
-      <button type="submit">送信</button>
-    </form>
+  <form action="https://formsubmit.co/enfel134.goen@gmail.com" method="POST">
+  <!-- スパム防止：必須 -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- 送信後に移動するサンクスページ（なければGitHub PagesのURLでOK） -->
+  <input type="hidden" name="_next" value="https://hogezokutyou.github.io/enfel-homepage/thankyou.html">
+
+  <input type="text" name="name" placeholder="お名前" required>
+  <input type="email" name="email" placeholder="メールアドレス" required>
+  <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+  <button type="submit">送信</button>
+</form>
   </section>
 
   <footer>
