@@ -47,15 +47,24 @@
   <section id="contact">
     <h2>お問い合わせ</h2>
     <p>以下のフォームよりお問い合わせください（※このフォームは送信されません）。</p>
-  <form action="https://formsubmit.co/enfel134.goen@gmail.com" method="POST">
-  <!-- スパム防止：必須 -->
+ <form action="https://formsubmit.co/enfel134.goen@gmail.com" method="POST">
+  <!-- Formsubmitオプション -->
   <input type="hidden" name="_captcha" value="false">
-  <!-- 送信後に移動するサンクスページ（なければGitHub PagesのURLでOK） -->
   <input type="hidden" name="_next" value="https://hogezokutyou.github.io/enfel-homepage/thankyou.html">
+  <input type="hidden" name="_subject" value="【株式会社Enfel】お問い合わせ">
+  <input type="hidden" name="_template" value="table"> <!-- 受信メールを表形式に -->
+  <!-- 迷惑メール対策（ハニーポット） -->
+  <input type="text" name="_honey" style="display:none">
 
-  <input type="text" name="name" placeholder="お名前" required>
-  <input type="email" name="email" placeholder="メールアドレス" required>
-  <textarea name="message" rows="5" placeholder="お問い合わせ内容" required></textarea>
+  <!-- 入力項目 -->
+  <input type="text" name="お名前" placeholder="お名前" required>
+  <input type="email" name="メール" placeholder="メールアドレス" required>
+  <input type="tel" name="電話" placeholder="電話番号（任意）" pattern="^[0-9-+() ]*$">
+  <textarea name="内容" rows="5" placeholder="お問い合わせ内容" required></textarea>
+
+  <!-- 返信先にユーザーのメールを使う（受信側メールクライアントの返信ボタンが便利に） -->
+  <input type="hidden" name="_replyto" value="{メール}">
+
   <button type="submit">送信</button>
 </form>
   </section>
