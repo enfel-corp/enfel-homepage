@@ -1,177 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>株式会社Enfel｜営業支援・組織コンサル</title>
-
-  <!-- フォント（ビジネス感UP） -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- スタイル -->
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="株式会社Enfelは、営業支援と組織コンサルティングで成果創出と定着化を伴走支援します。">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社Enfel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- ナビ -->
-  <nav>
-    <a href="#about">会社紹介</a>
-    <a href="#service-detail">サービス</a>
-    <a href="#process">進め方</a>
-    <a href="#company">会社概要</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">お問い合わせ</a>
+  <!-- ヘッダー -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Enfel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- ヒーロー -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1>株式会社Enfel</h1>
-      <p class="lead">素質を活かした強固な組織構築・ソリューションを提供します</p>
-      <div class="badges">
-        <span class="badge">営業支援</span>
-        <span class="badge">組織コンサル</span>
-        <span class="badge">研修設計</span>
-      </div>
-      <div class="cta">
-        <a href="#contact" class="btn btn-primary">お問い合わせ</a>
-        <a href="#service-detail" class="btn btn-ghost">サービスを見る</a>
-      </div>
+  <!-- メインビジュアル -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">株式会社Enfel</h1>
+      <p class="lead">円・縁・Enjoyをテーマに、学びと成長のコミュニティを創造します</p>
+      <a href="services.html" class="btn btn-light btn-lg mt-3">サービスを見る</a>
     </div>
   </header>
 
-  <!-- 会社紹介 -->
-  <section id="about">
-    <h2>会社紹介</h2>
-    <div class="panel">
-      <p>株式会社Enfelは、語呂合わせでご縁（円）が増えるという意味でつけた名前です。
-        <p>学ぶ、遊ぶ、稼ぐを3本の柱とする会社として北海道札幌市を拠点に、</p>
-      <p>常に最新の情報を自ら収集・実践を行う事で活きた知識として営業の支援と“素質を活かす”組織コンサルティングを行っています。</p>
-      <p>現場目線の実行支援と、再現性のある仕組み化で、継続的な成果をめざします。</p>
-    </div>
-  </section>
-
-  <!-- 代表メッセージ -->
-  <section id="message">
-    <h2>代表メッセージ</h2>
-    <div class="panel">
-      <p>代表の西陰敏晴です。私たちは「小さく始めて確実に成果へ」を信条に、目の前の課題から順番に解きほぐします。
-        無料の初回ヒアリングだけでも歓迎です。まずはお気軽にご相談ください。</p>
-    </div>
-  </section>
-
-  <!-- サービス詳細 -->
-  <section id="service-detail">
-    <h2>サービス詳細</h2>
-    <div class="panel">
-      <ul>
-        <li><strong>営業プロセス設計：</strong>ターゲット定義／KPI設計／トークスクリプト／CRM運用設計</li>
-        <li><strong>実行支援：</strong>アポ獲得・同席／録画レビュー／オンボーディング／定例伴走</li>
-        <li><strong>組織コンサル：</strong>評価制度の素案／1on1導入／育成プログラム・研修設計</li>
-      </ul>
-      <p style="margin-top:8px;color:#666;">※状況に応じて提供範囲を調整します。まずは課題の優先度をともに整理します。</p>
-    </div>
-  </section>
-
-  <!-- 進め方 -->
-  <section id="process">
-    <h2>ご支援の進め方</h2>
-    <div class="panel">
-      <ol>
-        <li><strong>ヒアリング（30–45分）</strong>：現状・課題・目標の共有</li>
-        <li><strong>簡易診断レポート</strong>：優先課題と初期プランをご提示</li>
-        <li><strong>短期実行（2–4週間）</strong>：成果が出やすい施策から着手</li>
-        <li><strong>定着化</strong>：ルール化／型化／内製化の伴走</li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- 会社概要 -->
-  <section id="company">
-    <h2>会社概要</h2>
-    <div class="panel">
-      <table>
-        <tr><td><strong>会社名</strong></td><td>株式会社Enfel</td></tr>
-        <tr><td><strong>設立</strong></td><td>2023年5月</td></tr>
-        <tr><td><strong>代表者</strong></td><td>西陰敏晴</td></tr>
-        <tr><td><strong>所在地</strong></td><td>北海道札幌市中央区南27条西13丁目1-12-203</td></tr>
-        <tr><td><strong>電話番号</strong></td><td>070-9027-4562</td></tr>
-        <tr><td><strong>メール</strong></td><td>enfel134.goen@gmail.com</td></tr>
-        <tr><td><strong>営業時間</strong></td><td>平日 9:00–18:00（事前予約で時間外対応可）</td></tr>
-        <tr><td><strong>対応エリア</strong></td><td>全国（オンライン中心／札幌市内は対面可）</td></tr>
-        <tr><td><strong>主要取引銀行</strong></td><td>開設手続き中</td></tr>
-      </table>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <h2>よくある質問</h2>
-    <div class="panel">
-      <details>
-        <summary>初回相談は無料ですか？</summary>
-        <p>はい。オンライン30–45分のヒアリングは無料です。</p>
-      </details>
-      <details>
-        <summary>最短いつから支援可能ですか？</summary>
-        <p>ご相談から最短翌週の着手が可能です。スケジュールはご相談ください。</p>
-      </details>
-      <details>
-        <summary>小規模でも依頼できますか？</summary>
-        <p>もちろんです。個人事業・小規模チームの立ち上げ支援実績があります。</p>
-      </details>
-    </div>
-  </section>
-
-  <!-- お問い合わせ -->
-  <section id="contact">
-    <h2>お問い合わせ</h2>
-    <div class="panel">
-      <p>以下のフォームよりお問い合わせください。送信内容は担当宛にメールで届きます。</p>
-
-      <form action="https://formsubmit.co/enfel134.goen@gmail.com" method="POST">
-        <!-- 送信後の遷移先（thankyou.html は同階層に設置） -->
-        <input type="hidden" name="_next" value="https://hogezokutyou.github.io/enfel-homepage/thankyou.html">
-        <!-- 表示・件名・スパム対策 -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="【株式会社Enfel】お問い合わせ">
-        <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none">
-
-        <!-- 入力項目 -->
-        <input type="text" name="お名前" placeholder="お名前" required>
-        <input type="email" name="メール" placeholder="メールアドレス" required>
-        <textarea name="内容" rows="5" placeholder="お問い合わせ内容" required></textarea>
-
-        <button type="submit">送信</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- 簡易ポリシー & 免責 -->
-  <section id="policy">
-    <h2>プライバシーポリシー（抜粋）</h2>
-    <div class="panel">
-      <p>株式会社Enfelは、お問い合わせ等で取得した個人情報を、お問い合わせ対応およびご連絡の目的のみに利用します。
-        ご本人の同意がある場合または法令に基づく場合を除き、第三者に提供いたしません。開示・訂正・削除のご希望は
-        上記メールアドレスまでご連絡ください。</p>
-    </div>
-  </section>
-
-  <section id="legal">
-    <h2>免責事項</h2>
-    <div class="panel">
-      <p>当サイトの情報は掲載時点のものであり、正確性・最新性を完全に保証するものではありません。
-        提供サービスの内容・価格等は予告なく変更となる場合があります。</p>
-    </div>
-  </section>
-
   <!-- フッター -->
-  <footer>
-    <p>&copy; 2023 株式会社Enfel. All rights reserved.</p>
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Enfel Inc.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
