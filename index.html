@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>株式会社Enfel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x600/?business,teamwork');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .hero h1 { font-size: 3.5rem; }
+    .hero p { font-size: 1.25rem; }
+  </style>
 </head>
 <body>
   <!-- ヘッダー -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Enfel</a>
+      <a class="navbar-brand fw-bold" href="index.html">Enfel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,19 +38,198 @@
   </nav>
 
   <!-- メインビジュアル -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="hero d-flex align-items-center text-center vh-100">
     <div class="container">
-      <h1 class="display-4">株式会社Enfel</h1>
+      <h1 class="fw-bold">株式会社Enfel</h1>
       <p class="lead">円・縁・Enjoyをテーマに、学びと成長のコミュニティを創造します</p>
-      <a href="services.html" class="btn btn-light btn-lg mt-3">サービスを見る</a>
+      <a href="services.html" class="btn btn-primary btn-lg mt-3">サービスを見る</a>
     </div>
   </header>
+
+  <!-- サービス概要ショート -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">私たちのサービス</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">セミナー事業</h5>
+              <p class="card-text">自己成長・金融リテラシー向上を目的としたセミナーを毎月開催。オンライン・オフラインに対応しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">法人研修</h5>
+              <p class="card-text">企業様向けに人材育成・マインドセット強化研修を提供。参加人数に応じたカスタマイズが可能です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">デジタル教材販売</h5>
+              <p class="card-text">成功哲学やライフスタイル改善に役立つ教材・動画を制作し、オンラインで提供しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="services.html" class="btn btn-outline-primary">もっと見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 実績ハイライト -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">開催実績</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">2025年7月10日：「自己成長・売上アップセミナー」開催（参加者42名）</li>
+        <li class="list-group-item">2025年8月5日：「法人向け研修プログラム」実施（社員20名参加）</li>
+      </ul>
+      <div class="text-center mt-3">
+        <a href="results.html" class="btn btn-outline-dark">実績ページへ</a>
+      </div>
+    </div>
+  </section>
 
   <!-- フッター -->
   <footer class="bg-dark text-white text-center py-3">
     <p class="mb-0">© 2025 Enfel Inc.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!-- ===========================
+ index.html (TOP)
+=========================== -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>株式会社Enfel｜円・縁・Enjoy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Enfel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-gradient text-white">
+    <div class="container py-5 py-lg-6">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold lh-sm mb-3">学びと体験を通じて、<br class="d-none d-lg-inline"/>持続的な成長を。</h1>
+          <p class="lead opacity-90">株式会社Enfelは、個人・法人向けにセミナー／研修を提供し、<span class="fw-semibold">“円（お金）・縁（つながり）・Enjoy（楽しさ）”</span>の循環を創ります。</p>
+          <div class="d-flex gap-2 mt-4">
+            <a class="btn btn-light btn-lg" href="services.html">サービスを見る</a>
+            <a class="btn btn-outline-light btn-lg" href="contact.html">お問い合わせ</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="hero-card shadow-lg rounded-4 p-4 bg-white text-dark">
+            <h2 class="h5 mb-3">直近の開催予定</h2>
+            <ul class="list-unstyled small mb-0">
+              <li class="d-flex align-items-center mb-2"><span class="badge bg-primary me-2">Online</span> 〇月〇日：メンタルブロック解放セミナー（90分）</li>
+              <li class="d-flex align-items-center mb-2"><span class="badge bg-success me-2">Offline</span> 〇月〇日：法人向け営業力強化 研修（都内）</li>
+              <li class="d-flex align-items-center"><span class="badge bg-secondary me-2">Hybrid</span> 〇月〇日：金融リテラシー講座（入門）</li>
+            </ul>
+            <div class="text-end mt-3"><a class="small fw-semibold" href="results.html">開催実績を見る →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust / Badges -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-lg-3"><div class="trust-box">月次開催 <span class="h4 fw-bold">継続</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-box">延べ参加 <span class="h4 fw-bold">80名+</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-box">法人研修 <span class="h4 fw-bold">対応</span></div></div>
+        <div class="col-6 col-lg-3"><div class="trust-box">オンライン <span class="h4 fw-bold">対応</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Digest -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 fw-bold mb-4 text-center">提供サービス</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-16x9 bg-soft-emerald"></div>
+            <div class="card-body">
+              <h3 class="h5">オンラインセミナー</h3>
+              <p class="small text-muted">自己成長・金融リテラシー・営業力の向上に特化。初回は参加しやすい価格設定。</p>
+              <a href="services.html#online" class="stretched-link">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-16x9 bg-soft-blue"></div>
+            <div class="card-body">
+              <h3 class="h5">法人向け研修</h3>
+              <p class="small text-muted">モチベーション・営業マインド・行動定着に効く実践プログラム。人数・内容カスタム可。</p>
+              <a href="services.html#corp" class="stretched-link">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-16x9 bg-soft-gray"></div>
+            <div class="card-body">
+              <h3 class="h5">デジタル教材</h3>
+              <p class="small text-muted">講義の復習・社内展開に使えるリソース。小規模から導入可能。</p>
+              <a href="services.html#digital" class="stretched-link">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-primary text-white">
+    <div class="container d-lg-flex align-items-center justify-content-between">
+      <div class="me-lg-4">
+        <h2 class="h3 fw-bold mb-2">まずはお問い合わせください</h2>
+        <p class="mb-0 opacity-90">開催実績、料金、スケジュールのご相談など、専任担当が迅速にご案内します。</p>
+      </div>
+      <div class="mt-3 mt-lg-0">
+        <a class="btn btn-light btn-lg" href="contact.html">お問い合わせフォームへ</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3"><small>© 2025 Enfel Inc.</small></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
